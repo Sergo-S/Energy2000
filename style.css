@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: system-ui;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.bg{
+    max-height: 791px;
+}
+.bg img{
+    width: 98.9vw;
+}
+header{
+    position: fixed;
+    z-index: 2;
+    width: 98.9vw;
+    background: #000000;
+    display: flex;
+    align-items: center;
+}
+.links{
+    width: 80%;
+    text-align: center;
+}
+.link{
+    color: #fff;
+    margin: 5px 20px;
+}
+
+.active {
+    padding-bottom: 15px;
+    border-bottom: 5px solid #204A2E;
+}
+.active-link {
+    padding-bottom: 15px;
+    border-bottom: 5px solid #204A2E;
+}
+
+.lang a{
+    color: #fff;
+    margin: 0px 5px;
+}
+.active_lang{
+    border: 2px solid #204A2E;
+    border-radius: 50px;
+    padding: 3px 3px 6px 3px;
+    background-color: #204A2E;
+}
+p{
+    margin: 10px;
+}
+.separator{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(360deg, #204A2E 20.44%, #000000 80.91%), #C4C4C4;
+}
+.separator h2{
+    margin: 120px 60px 60px 60px ;
+    font-size: 30px;
+}
+.group1{
+    display: flex;
+    height: 550px;
+}
+ .content{
+    width: 65%;
+    padding: 10px 30px 0px 60px;
+    font-size: 19px;
+} 
+.content ul{
+    margin-left: 20px;
+}
+.video{
+    margin-right: 60px;
+    padding: 120px 60px 0 0px ;
+    width: 35%;
+    
+} 
+/* ----------------------- */
+
+
+.group2{
+    display: flex;
+    justify-content: center;
+    height: 520px; 
+    padding: 100px;
+
+}
+.group2 a{
+    color: #000000;
+}
+
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+.tren_container{
+    width: 1300px;
+    height: 350px;
+    transition: all 3s;
+    margin-left: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/* .swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    color: #204A2E;
+    font-weight: bold;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000;
+} */
+
+.tren_card{
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border: 2px solid #000000;
+    text-align: center;
+    transition: .4s;
+    cursor: pointer;
+}
+.tren_image{
+    padding: 5px 5px 0px 5px;
+}
+.tren_image img{
+    height: 190px;
+    width: 190px;
+}
+.tren_card:hover{
+    transform: scale(1.07,1.07);
+} 
+.tren_description{
+    font-size: 15px;
+}
+
+/* ====================== */
+
+.news_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 190px;
+    height: 550px;
+}
+.news_container a{
+    color: #000000;
+}
+.news_card{
+    border: 2px solid #000000;
+    height: 145px;
+    width: 1200px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    transition: .3s;
+}
+.news_card:hover{
+    box-shadow: 4px 4px 10px #000000;
+}
+.news_image img{
+    padding: 5px;
+    width: 190px;
+    height: 141px;
+}
+.news_card h3{
+    font-size: 15px;
+    padding-left: 10px;
+}
+footer{
+    background: #000000;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+footer a{
+    color: #fff;
+}
+.foot_logo{
+    width: 30%;
+}
+
+
+.modal {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+    transition: .4s ease-in-out;
+}
+.modal {
+    display: none;
+}
+.modal.open {
+    display: flex;
+}
+.modal__block {
+    position: relative;
+    display: flex;
+    width: 1200px ;
+    padding: 20px ;
+    background-color: #fff;
+    box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+.modal__content{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+}
+.modal__video{
+    width: 55%;
+    margin-left: 40px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.modal__title {
+    font-size: 17px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #000000;
+    padding: 0 5px;
+    transition: .3s;
+    cursor: pointer;
+    padding: 5px 0;
+    margin: 5px 10px;
+}
+
+.active-links {
+    background-color: rgb(65, 64, 64);
+    color: #fff;
+}
+
+.modal__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    border: 2px solid #000000;
+    padding: 0 5px;
+    transition: .3s;
+}
+.modal__close:hover {
+    background-color: rgb(65, 64, 64);
+    color: #fff;
+}
