@@ -251,7 +251,10 @@ footer a{
     padding: 5px 0;
     margin: 5px 10px;
 }
-
+.modal__title:hover{
+    background-color: rgb(65, 64, 64);
+    color: #fff;
+}
 .active-links {
     background-color: rgb(65, 64, 64);
     color: #fff;
